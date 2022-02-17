@@ -11,6 +11,7 @@
 	"author": "Dexie",
 	"license": "ISC",
 	"dependencies": {
+		"@types/node": "^17.0.18",
 		"ejs": "^3.1.6",
 		"express": "^4.17.1",
 		"express-subdomain": "^1.0.5"
