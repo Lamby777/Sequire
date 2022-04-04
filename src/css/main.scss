@@ -1,5 +1,8 @@
+@import "custombs.scss";
+@import "~bootstrap/scss/bootstrap";
+
 body {
-	background-image: url("mainbackground.jpg");
+	background: red; // url("mainbackground.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-x: center;
@@ -23,7 +26,7 @@ body {
 	font-family: "Lucida Console", monospace;
 	font-weight: 900;
 	tab-size: 4;
-}/**/
+}
 
 .codebox span[syn1] {
 	color: dodgerblue;
@@ -46,20 +49,11 @@ body {
 }
 
 img.pixel-art {
-    /*image-rendering: optimizeSpeed;*/
-    image-rendering: -moz-crisp-edges;          /* Firefox							*/
-    image-rendering: -o-crisp-edges;            /* Opera							*/
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari)	*/
-    image-rendering: pixelated;					/* Chrome							*/
-}
-
-.cursored::after {
-	content: '|';
-	height: 100%;
-	color: white;
-	opacity: 0;
-	display: inline-block;
-	animation: blink 0.6s linear infinite alternate;
+	//image-rendering: optimizeSpeed;
+	image-rendering: -moz-crisp-edges;          // Firefox
+	image-rendering: -o-crisp-edges;            // Opera
+	image-rendering: -webkit-optimize-contrast; // Chrome + Safari
+	image-rendering: pixelated;					// Chrome
 }
 
 @keyframes blink {

@@ -12,8 +12,9 @@ import fs			from "fs";
 export const app = Express();
 app.set("view engine", "ejs");
 app.use(Express.json());
+app.use(Express.static(__dirname + "/public"));
 
-app.get("/", (req, res) => {
+app.get("/", (req: Express.Request, res: Express.Response) => {
 	console.log("amogus");
 	res.render("main");
 });

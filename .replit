@@ -1,4 +1,2 @@
-run = "node index.js"
-
-[nix]
-channel = "stable-21_11"
+language = "nix"
+run = "npm start"

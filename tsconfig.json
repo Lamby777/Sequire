@@ -1,15 +1,15 @@
 {
 	"compilerOptions": {
 		"module": "commonjs",
+		"target": "esnext",
 		"removeComments": true,
 		"noImplicitAny": true,
-		"preserveConstEnums": true,
-		"target": "esnext",
 		"sourceMap": false,
 		"esModuleInterop": true,
-		"resolveJsonModule": true
 	},
 	"exclude": [
-		"node_modules"
+		"node_modules",
+		"src",
+		"dist"
 	]
 }
